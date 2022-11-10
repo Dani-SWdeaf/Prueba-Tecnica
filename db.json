@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Terry",
+      "lastName": "Medhurst",
+      "email": "atuny0@sohu.com",
+      "username": "atuny0",
+      "password": "9uQFF1Lh"
+    },
+    [
+      {
+        "id": 2,
+        "firstName": "Sheldon",
+        "lastName": "Quigley",
+        "email": "hbingley1@plala.or.jp",
+        "username": "hbingley1",
+        "password": "CQutx25i8r"
+      }
+    ]
+  ],
+  "products": [
+    {
+      "title": "IPhone 9",
+      "price": 549,
+      "description": "An apple moblie witch is nothing like apple",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "IPhone 5",
+      "price": 80,
+      "description": "Es básico"
+    },
+    {
+      "title": "MOTO 2",
+      "price": 200,
+      "description": "Está genial",
+      "id": 3
+    }
+  ]
+}

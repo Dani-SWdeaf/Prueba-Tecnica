@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-sm-4 app">
+    <div *ngFor="let p of personaData">
+      <p>{{p.email}}</p>
+      <p>{{p.firstName}} {{p.lastName}}</p>
+    </div>
+    <a class="text-dark" routerLink="/products">
+      <i class="fa-solid fa-network-wired"></i> Products
+    </a>
+  </div>
+  <div class="col-sm-8">
+    <div class="img">
+      <div class="lista">
+        <h5>Listado de Productos</h5>
+        <a routerLink="/agregar" class="btn btn-success float-right">
+          + Agregar
+      </a>
+        <br />
+        <br />
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Accion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let p of productosData">
+              <th scope="row">{{p.id}}</th>
+              <th spoce="row" class="text-left">{{p.title}}</th>
+              <th space="row" class="text-right">$ {{p.price}}</th>
+              <th>
+                <a class="fa-lg m-3" (click)="editProductos(p.id)"><i class="fa-solid fa-pen-to-square text-info"></i></a>
+                <a class="fa-lg" (click)="deleteProductos(p.id)"><i class="fa-solid fa-trash text-danger"></i></a>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

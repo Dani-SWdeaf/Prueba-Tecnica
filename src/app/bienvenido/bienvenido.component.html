@@ -1,6 +1,12 @@
 <div class="row">
   <div class="col-sm-4 app">
-    <h3>USUARIO ({{ dato }})</h3>
+    <div *ngFor="let p of personaData">
+      <p>{{p.email}}</p>
+      <p>{{p.firstName}} {{p.lastName}}</p>
+    </div>
+    <a class="text-dark" routerLink="/products">
+      <i class="fa-solid fa-network-wired"></i> Products
+    </a>
   </div>
   <div class="col-sm-8">
     <div class="img">

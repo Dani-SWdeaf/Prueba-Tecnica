@@ -1,0 +1,27 @@
+.app
+{
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff;
+}
+
+.lista
+{
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    top: 5%;
+    height: 70%;
+    width: 80%;
+    padding: 50px;
+    margin-left: 10%;
+}
+
+.img
+{
+    background-image: url('/assets/img/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 99.8vh;
+}
